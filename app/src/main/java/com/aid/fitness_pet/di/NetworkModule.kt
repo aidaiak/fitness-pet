@@ -1,6 +1,7 @@
 package com.aid.fitness_pet.di
 
 
+import com.aid.fitness_pet.BuildConfig
 import com.aid.fitness_pet.data.network.UserApi
 import dagger.Module
 import dagger.Provides
