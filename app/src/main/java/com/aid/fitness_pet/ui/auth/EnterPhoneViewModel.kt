@@ -4,6 +4,9 @@ import com.aid.fitness_pet.ui.base.AuthEvent
 import com.aid.fitness_pet.ui.base.BaseEvent
 import com.aid.fitness_pet.ui.base.BaseVM
 import dagger.hilt.android.lifecycle.HiltViewModel
+import io.reactivex.Completable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 @HiltViewModel
@@ -20,8 +23,17 @@ class EnterPhoneViewModel @Inject constructor() : BaseVM() {
             return
         }
         showLoading()
-        Thread.sleep(2000)
-        _event.postValue(AuthEvent.OnAuthSuccess)
-        hideLoading()
+        disposable.add(
+            Completable.timer(1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
+                .subscribe(
+                    {
+                        _event.postValue(AuthEvent.OnAuthSuccess)
+                        hideLoading()
+                    }, {
+                        _event.value = BaseEvent.ShowToast(it.message ?: "")
+                        hideLoading()
+                    }
+                )
+        )
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemFeed"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemSearch"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemSchedule"
+        android:icon="@drawable/ic_bell"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemProfile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always" />
+
+</menu>

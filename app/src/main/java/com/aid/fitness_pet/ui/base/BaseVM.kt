@@ -28,11 +28,11 @@ open class BaseVM @Inject constructor() : ViewModel() {
 
 
     protected fun showLoading(){
-        _isLoading.value = true
+        _isLoading.postValue(true)
     }
 
     protected fun hideLoading(){
-        _isLoading.value = false
+        _isLoading.postValue(false)
     }
 
     override fun onCleared() {

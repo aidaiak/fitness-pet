@@ -1,17 +1,27 @@
-package com.aid.fitness_pet.ui.main
+package com.aid.fitness_pet.ui
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.aid.fitness_pet.ui.auth.EnterPhoneFragment
-import dagger.hilt.android.AndroidEntryPoint
+import com.aid.fitness_pet.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
+    private val preference: SharedPreferences by lazy {
+        applicationContext.getSharedPreferences("fitness", Context.MODE_PRIVATE)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        replace(EnterPhoneFragment())
+        if (preference.contains("PHONE_NUMBER")) {
+            replace(HomeFragment())
+        } else {
+            replace(EnterPhoneFragment())
+        }
     }
 }
 
