@@ -40,7 +40,7 @@
         android:backgroundTint="#EAEAEA"
         android:foreground="?selectableItemBackground"
         android:padding="16dp"
-        android:text="Security"
+        android:text="@string/security"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="parent" />
@@ -55,7 +55,7 @@
         android:backgroundTint="#EAEAEA"
         android:foreground="?selectableItemBackground"
         android:padding="16dp"
-        android:text="Notification"
+        android:text="@string/notification"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintTop_toTopOf="parent" />

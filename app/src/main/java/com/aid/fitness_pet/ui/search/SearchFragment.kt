@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import com.aid.fitness_pet.databinding.FragmentSearchBinding
 import com.aid.fitness_pet.ui.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SearchFragment : BaseFragment<SearchViewModel, FragmentSearchBinding>(
     SearchViewModel::class.java,
     { FragmentSearchBinding.inflate(it) }

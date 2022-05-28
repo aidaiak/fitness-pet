@@ -5,7 +5,9 @@ import android.view.View
 import androidx.core.view.isVisible
 import com.aid.fitness_pet.databinding.FragmentFeedBinding
 import com.aid.fitness_pet.ui.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FeedFragment : BaseFragment<FeedViewModel, FragmentFeedBinding>(
     FeedViewModel::class.java,
     { FragmentFeedBinding.inflate(it) }

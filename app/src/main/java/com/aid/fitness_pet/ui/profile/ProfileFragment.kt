@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import com.aid.fitness_pet.databinding.FragmentProfileBinding
 import com.aid.fitness_pet.ui.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ProfileFragment : BaseFragment<ProfileViewModel, FragmentProfileBinding>(
     ProfileViewModel::class.java,
     { FragmentProfileBinding.inflate(it) }

@@ -3,6 +3,9 @@
     <string name="sign_up_legacy">By signing up, you agree to Photo’s Terms of Service and Privacy Policy.</string>
     <string name="promotions">Promotions</string>
     <string name="membership">Membership card</string>
+    <string name="search">Search</string>
     <string name="profile">Profile</string>
     <string name="membership_hint">Morning access\n24/40</string>
+    <string name="security">Security</string>
+    <string name="notification">Notification</string>
 </resources>
