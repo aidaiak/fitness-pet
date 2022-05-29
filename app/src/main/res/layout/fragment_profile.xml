@@ -16,48 +16,84 @@
         android:textSize="36sp"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/userNameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/bg_rounded_corner_8"
         android:backgroundTint="#EAEAEA"
-        android:foreground="?selectableItemBackground"
         android:padding="16dp"
-        android:text="@string/profile"
+        android:hint="Enter user name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/securityTextView"
+    <EditText
+        android:id="@+id/numberTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="4dp"
         android:background="@drawable/bg_rounded_corner_8"
         android:backgroundTint="#EAEAEA"
-        android:foreground="?selectableItemBackground"
+        android:inputType="phone"
         android:padding="16dp"
-        android:text="@string/security"
+        android:layout_marginTop="4dp"
+        android:imeOptions="actionNext"
+        android:hint="Enter phone number"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/notificationTextView"
+    <EditText
+        android:id="@+id/dateTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="4dp"
         android:background="@drawable/bg_rounded_corner_8"
         android:backgroundTint="#EAEAEA"
-        android:foreground="?selectableItemBackground"
         android:padding="16dp"
-        android:text="@string/notification"
+        android:imeOptions="actionNext"
+        android:inputType="date"
+        android:layout_marginTop="4dp"
+        android:hint="Enter birth date"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/trainerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_rounded_corner_8"
+        android:backgroundTint="#EAEAEA"
+        android:padding="16dp"
+        android:imeOptions="actionDone"
+        android:inputType="date"
+        android:layout_marginTop="4dp"
+        android:hint="Enter trainer"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/actionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_rounded_corner_8"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_gravity="bottom"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </FrameLayout>
 
 </LinearLayout>
