@@ -1,5 +1,6 @@
 package com.aid.fitness_pet.ui.schedule
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -28,8 +29,10 @@ class ScheduleAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         val binding: ItemScheduleBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
+        @SuppressLint("SetTextI18n")
         fun bind(item: Schedule) {
-            binding.textView.text = item.name
+            binding.topTextView.text = "${item.time}\n${item.trainingType}"
+            binding.textView.text = item.name + "\n" + item.trainerName
         }
     }
 

@@ -8,13 +8,19 @@ fun UserDto.toUserEntity(): UserEntity {
     return UserEntity(
         id,
         name,
-        surname
+        number,
+        date,
+        trainer
     )
 }
 
 
 fun UserDto.toUser(): User {
     return User(
-        id,name,surname
+        id,
+        name,
+        number,
+        date,
+        trainer
     )
 }

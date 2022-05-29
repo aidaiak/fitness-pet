@@ -2,11 +2,24 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/topTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        tools:text="akjsdla" />
+
+    <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:text="aksdjalsd"
         android:layout_height="wrap_content"
         android:padding="16dp" />
 

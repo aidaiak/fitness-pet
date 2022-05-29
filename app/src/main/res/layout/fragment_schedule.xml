@@ -28,6 +28,7 @@
             android:id="@+id/prevImageView"
             android:layout_width="32dp"
             android:layout_height="32dp"
+            android:src="@drawable/ic_arrow_left"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +36,10 @@
         <TextView
             android:id="@+id/dateTextView"
             android:layout_width="wrap_content"
+            android:drawableStart="@drawable/ic_calendar"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/nextImageView"
             app:layout_constraintStart_toEndOf="@+id/prevImageView"
@@ -45,6 +49,7 @@
             android:id="@+id/nextImageView"
             android:layout_width="32dp"
             android:layout_height="32dp"
+            android:src="@drawable/ic_arrow_right"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

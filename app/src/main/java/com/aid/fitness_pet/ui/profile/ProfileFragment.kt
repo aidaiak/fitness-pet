@@ -2,6 +2,7 @@ package com.aid.fitness_pet.ui.profile
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import androidx.core.widget.doAfterTextChanged
 import com.aid.fitness_pet.databinding.FragmentProfileBinding
 import com.aid.fitness_pet.ui.base.BaseFragment
@@ -30,6 +31,13 @@ class ProfileFragment : BaseFragment<ProfileViewModel, FragmentProfileBinding>(
 
         binding.actionButton.setOnClickListener {
             vm.save()
+        }
+        vm.isLoading.observe(viewLifecycleOwner) { isLoading ->
+            binding.trainerTextView.isEnabled = !isLoading
+            binding.dateTextView.isEnabled = !isLoading
+            binding.numberTextView.isEnabled = !isLoading
+            binding.userNameTextView.isEnabled = !isLoading
+            binding.progressBar.isVisible = isLoading
         }
         vm.user.observe(viewLifecycleOwner) {
             binding.userNameTextView.setText(it?.name)

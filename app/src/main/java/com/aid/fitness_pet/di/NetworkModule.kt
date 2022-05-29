@@ -2,7 +2,7 @@ package com.aid.fitness_pet.di
 
 
 import com.aid.fitness_pet.BuildConfig
-import com.aid.fitness_pet.data.network.UserApi
+import com.aid.fitness_pet.data.network.ScheduleApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,7 +20,7 @@ import javax.inject.Singleton
 class NetworkModule {
 
     @Provides
-    fun provideUserApi(retrofit: Retrofit): UserApi = retrofit.create(UserApi::class.java)
+    fun provideScheduleApi(retrofit: Retrofit): ScheduleApi = retrofit.create(ScheduleApi::class.java)
 
     @Provides
     @Singleton
