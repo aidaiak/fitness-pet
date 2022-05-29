@@ -70,7 +70,7 @@
         android:backgroundTint="#EAEAEA"
         android:padding="16dp"
         android:imeOptions="actionDone"
-        android:inputType="date"
+        android:inputType="textPersonName"
         android:layout_marginTop="4dp"
         android:hint="Enter trainer"
         android:textColor="@android:color/black"

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">fitness-pet</string>
-    <string name="sign_up_legacy">By signing up, you agree to Photo’s Terms of Service and Privacy Policy.</string>
+    <string name="sign_up_legacy">By signing up, you agree to Terms of Service and Privacy Policy.</string>
     <string name="promotions">Promotions</string>
     <string name="membership">Membership card</string>
     <string name="schedule">Schedule</string>

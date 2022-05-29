@@ -15,13 +15,13 @@ class FeedViewModel @Inject constructor() : BaseVM() {
         FeedItem(
             image = "https://static3.bigstockphoto.com/6/6/3/large1500/366639772.jpg",
             title = "30% discount on morning access",
-            description = "30% discount on morning access to our gym. Summer is\u2028coming, get fit now!"
+            description = "30% discount on morning access to our gym.\n" + "Summer is coming, get fit now!"
         ),
         FeedItem(
             image = "https://miychay.com/upload/iblock/255/25555a1593b3f3adac5fbbbbe2f5c1a2.jpeg",
             title = "Yoga classes in the summer! ",
-            description = "Starting from June 1, 2022 there will be Yoga classes with\n" +
-                "Rahim. Come and join!"
+            description = "Starting from June 1, 2022 there will be Yoga classes with Rahim\n" +
+                "Come and join!"
         )
     )
 
